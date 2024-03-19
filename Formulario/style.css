@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Donegal+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1.2rem;
+    background: #272a39;
+    font-family: "Donegal One", "sans-serif";
+}
+
+form {
+    width: 100%;
+    max-width: 12em;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+}
+
+input,
+textarea,
+button{
+    width: 100%;
+    font: inherit;
+    padding: 1.2rem;
+    font-weight: 700;
+}
+
+input, 
+textarea {
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    background: #323632;
+    border: 0.130rem solid transparent;
+    border-radius: 1.12rem;
+    transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: cadetblue;
+    box-shadow: 0 0 0 0.40rem #26344c;
+}
+
+label {
+    margin-bottom: 0.3rem;
+    color: darkgrey;
+}
+
+textarea {
+    min-height: 15rem;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    border-radius: 99px;
+    color: whitesmoke;
+    background: #1d90f5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #1d90f5;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #323632;
+}
